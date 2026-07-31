@@ -16,7 +16,19 @@ def count_numbers(which, numbers):
             odd = odd + 1
 
     if which == "even":
-        return even
+        if (even == 1):
+            return print("there is", even, "even number in", numbers)
+
+        return print("there are", even, "even numbers in", numbers)
     elif which == "odd":
-        return odd    
+        if (odd == 1):
+            return print("there is", odd, "odd number in", numbers)
+        
+        return print("there are", odd, "odd numbers in", numbers)
+    
     return -1
+
+numlist = [7, 17, 2, 13, 19, 20, 0, 5, 11, 1280, 105]
+count_numbers("even",numlist)
+count_numbers("odd",numlist)
+count_numbers("Blarg",numlist)
